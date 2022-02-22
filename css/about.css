@@ -1,0 +1,292 @@
+html{
+    scroll-behavior: smooth;
+}
+#particles-js{
+    z-index: 1;
+}
+.dp-cont-pt1{
+    width: 100%;
+    height: 40vh;
+    margin: auto;
+}
+.dp-cont-pt1 .dp-bg-img{
+    background: url('https://www.euractiv.com/wp-content/uploads/sites/2/2020/07/shutterstock_1690618177-800x450.jpg'),rgb(0 0 0 / 52%);
+    background-blend-mode: darken;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+}
+.dp-cont-pt1 .h1{
+    color: white;
+    margin-left: 10%;
+    margin-bottom: 20px;
+}
+.dp-cont-pt2{
+    height: 50vh;
+    display: flex;
+}
+.dp-cont-pt2 .dp-block-border{
+    margin:0 10px;
+    padding: 15px 18px;;
+    border-right: 1px solid rgb(2, 2, 61);
+}
+.dp-cont-pt3{
+    position: relative;
+}
+.dp-cont-pt3 .row{
+    height: 90vh;
+    position: relative;
+}
+.dp-cont-pt3 .row .dp-bg-color{
+    background-color: rgb(1, 0, 32);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 75vh;
+    margin: auto;
+}
+.dp-cont-pt3 .row .dp-sb-title{
+    height: 5vh;
+    margin: 20px auto;
+    color: black;
+    z-index: 1;
+} 
+.dp-cont-pt3 .row .cont-text{
+    background-color: #fffffffa;
+    border: 0.5px solid rgb(167, 167, 167);
+    margin: auto;
+    padding: 20px;
+    position: absolute;
+    width: 80vh;
+    height: 50vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+.dp-cont-pt3 .dp-img{
+    position: absolute;
+    width: 50vh;
+    height: 50vh;
+    margin: auto;
+    z-index: -1;
+}
+.dp-cont-pt3 .dp-img.left{
+    top: 20%;
+    left: 10%;
+}
+.dp-cont-pt3 .dp-img.right{
+    top: 60%;
+    right: 10%;
+}
+
+.dp-cont-pt4 .row {
+    height: 65vh;
+}
+.dp-cont-pt4 .dp-bg-color-1{
+    background: url('https://media.istockphoto.com/photos/work-hard-and-smart-picture-id637232854?k=20&m=637232854&s=612x612&w=0&h=VlNSww8nmHb_OuUIrYZ8BQvNZWd5UsFBzf-7-pZhlBU='),rgb(1 36 56 / 12%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.dp-cont-pt4 .dp-bg-color-2{
+    background: url('https://media.istockphoto.com/photos/african-american-man-in-vr-glasses-watching-360-degree-video-with-picture-id1153003853?k=20&m=1153003853&s=612x612&w=0&h=pfb72jp5yf8YUqWG6J2LyR243gZI7r9Thcfr8cwxAdI='),rgb(1 36 56 / 12%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.dp-cont-pt4 .cont-text{
+    color: white;
+    background: linear-gradient(to top, black 0%, black 85%, white 50%, white 100%);
+}
+.dp-cont-pt4 .cont-text.cont-revent{
+    background: linear-gradient(to bottom, rgb(1, 23, 49) 0%, rgb(1, 23, 49) 85%, white 50%, white 100%);
+}
+.dp-cont-pt4 .row .cont-text .p{
+    align-self: center!important;
+    font-size: 0.9em;
+    width: 80%;
+    margin: auto;
+    text-align: left;
+}
+
+.dp-cont-pt5{
+    position: relative;
+    height: 95vh;
+    background-repeat: no-repeat;
+    background-size: auto;
+    text-align: center;
+    overflow: hidden;
+}
+.dp-cont-pt5 svg{
+    position: absolute;
+    left: -35%;
+    top: -50px;
+    fill: #00000024;
+    z-index: -1;
+    animation: movUpDown 8s linear infinite;
+}
+@keyframes movUpDown {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.dp-cont-pt5 .d-flex .col-md{
+    margin: 5px;
+    padding: 15px;
+    font-size: 0.9em;
+}
+.dp-cont-pt5 .d-flex .col-md:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.336);
+    transform: scale(1.1);
+
+}
+/* .dp-cont-pt5 .d-flex .col-md:hover .p{
+    transform: scale(1.5);
+} */
+.dp-cont-pt6 {
+    /* height: 100vh; */
+}
+.dp-cont-pt6 .row{
+    /* background: rgb(1, 0, 51); */
+    /* color: white !important; */
+}
+.dp-cont-pt6 .dp-sb-title{
+    color: black;
+}
+.dp-cont-pt6 .dp-cont{
+    height: 70vh;
+    background: linear-gradient(to top, rgb(1, 23, 49) 0%, rgb(1, 23, 49) 65%, white 50%, white 100%);
+    overflow: hidden;
+}
+.dp-cont-pt6 .dp-cont .dp-block-container{
+    flex-wrap: nowrap;
+    /* overflow: hidden; */
+    display: flex;
+}
+.dp-cont-pt6 .dp-cont .dp-block-container .dp-block {
+    flex: none;
+    width: 300px;
+    height: 250px;
+    color: white;
+    padding: 0px;
+    position: relative;
+    margin: 10px 10px;
+}
+.dp-cont-pt6 .dp-cont .dp-block-container img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.dp-cont-pt6 .dp-block .cont-text{
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    background: #0d0d0d63;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+}
+.dp-cont-pt6 .dp-block:hover .cont-text{
+    background: #ffffff42;
+}
+.dp-cont-pt6 .dp-block .cont-text .p,
+.dp-cont-pt6 .dp-block .cont-text i{
+    align-self: center;
+}
+.dp-cont-pt6 .dp-cont .phrase{
+    color: white;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+/* scroll animation */
+
+@keyframes scroll {
+    20% {
+        transform: translateX(0px);
+   }
+    100% {
+        transform: translateX(calc(-250px * 6));
+   }
+}
+.dp-cont-pt6 .dp-block-container{
+    animation: scroll 40s infinite;
+    display: flex;
+    /* width: 100%; */
+    width: calc(250px * 6);
+}
+/* end scroll animation */
+.dp-cont-pt7{
+    position: relative;
+    height: 100vh;
+    /* background: red; */
+}
+.dp-cont-pt7 .slider-container{
+    height: 100%;
+}
+.dp-cont-pt7 .slider{
+    position: relative;
+    height: 85%;
+    overflow: hidden;
+}
+.dp-cont-pt7 .slider .item{
+    position: absolute;
+    height: 100%;
+    margin: 0;
+    /* display: none; */
+    opacity: 0;
+}
+.dp-cont-pt7 .slider .item.active{
+    display: flex;
+    opacity: 1;
+    transition: opacity .5s ease-in-out;
+    left: 0;
+    right: 0;
+}
+.dp-cont-pt7 .slider .dp-bg-color{
+    /* background: rgb(223, 153, 3); */
+    height: 100%;
+    padding: 20px;
+    font-size: 1.2em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    position: relative;
+}
+.dp-cont-pt7 .slider .item img{
+    width: 100%;
+    height: 100%;
+}
+.dp-cont-pt7 .slider-container .arrow{
+    position: absolute;
+    display: flex;
+    /* margin-top: 30px; */
+    bottom: 100px;
+    left: 30px;
+    fill: rgb(211 211 211);
+}
+.dp-cont-pt7 .slider-container .arrow svg{
+    cursor: pointer;
+    width: 50px;
+}
+.dp-cont-pt7 .slider-container .arrow svg:hover{
+    fill: white;
+}
+
+

@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    margin: auto;
+    position: relative;  
+    font-size: 16px;
+}
+
+/* HEADER**/
+
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    transition: background-color 0.5s ease-out;
+    z-index: 11; 
+    box-shadow: 0px 0px 10px black;
+    overflow-y: hidden;
+    top: 0;
+}
+
+nav.nav-top{
+    background-color: #ffffff14 !important;
+    box-shadow: 0px 0px 3px white !important;
+}
+
+.navbar{
+    /* position: relative;  */
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    margin: auto;
+}
+
+.logo{
+    background-image: url('./img/Logo-D9-blanco.png');
+    height: 80px;
+    width: 120px;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+    align-items: flex-start;
+}
+.logo img{
+    width: 165px;
+    height: 182px;
+    margin-top: -45px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box; 
+    margin-bottom: 0; 
+}
+/*
+.nav-links li{
+    list-style: none;
+    margin: 10px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    font-size: 0.87em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: rgb(81 81 81);
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    padding: 4px 0;
+    transition: 0.7s ease-out;
+}
+*/
+.nav-links.a-top li a{
+    color: rgb(246 246 246) !important;
+}
+/*
+.nav-links a:hover, nav .active{
+    border-bottom: 1px solid rgb(5, 6, 68);
+} */
+
+/* PRUEBA NAV-LINKS */
+
+/* .nav-links {
+    position: absolute;
+   
+    transform: translate(-50%, -50%);
+    display: flex;
+  } */
+  .nav-links li {
+    list-style: none;
+  }
+  .nav-links li a {
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    margin: 20px 0;
+    padding: 10px 10px;
+    text-decoration: none;
+    /* color: #262626; */
+    /* font-family: sans-serif; */
+    /* font-size: 10px; */
+    /* font-weight: 600; */
+    transition: 0.5s;
+    z-index: 1;
+
+    font-size: 0.77em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: rgb(81 81 81);
+  }
+  .nav-links li a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #262626;
+    border-bottom: 2px solid #262626;
+    transform: scaleY(2);
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .nav-links li a:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+    transform: scale(0);
+    opacity: 0;
+    transition: 0.3s;
+    z-index: -1;
+  }
+  .nav-links li a:hover {
+    color: #fff;
+  }
+  .nav-links li a:hover:before {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  .nav-links li a:hover:after {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  
+  
+/* END PRUEB NAV-LINKS */
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(143, 143, 143);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+
+/** ANIMATIONS */
+@keyframes navLinksFade{
+    from{
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+/***BURGBER ANIMATION*****/
+
+.toggle .line1{
+    transform: rotate(-49deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+/** --END HEADER **/
+
+
+/* FOOTER */
+.footer{
+  padding-top:20px;
+  background:#01162b;
+  color: white;
+}
+.footer .title{
+    position: relative;
+    font-size: 17px;
+    text-align: left;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.footer .title::before{
+	content: '';
+    position: absolute;
+    bottom: 0;
+    left: auto;
+	width: 15%;
+	height: 3px;
+    background-color: black;
+}
+
+.footer .phrase{
+    font-size: 25px;
+}
+
+.phrase strong{
+    font-size: 28px;
+}
+
+.footer .links-container ul{
+    display: flex;
+    justify-content: center;
+    /* justify-content: flex-start; */
+    text-align: left;
+    flex-wrap: wrap;
+}
+.footer .links-container ul li{
+    list-style: none;
+    margin:  0 10px;
+    padding:5px
+}
+.footer .links-container ul li a{
+    /* background-color: #012141; */
+    /* padding:5px; */
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+.footer .links-container ul li a:hover{
+    background-color: rgb(4, 5, 7);
+}
+.footer i{
+   cursor: pointer;
+}
+.contacts-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.footer .copyright{
+    margin-top: 30px;
+    text-align: center;
+    border-top: 1px solid white;
+    padding: 15px;
+    font-size: 14px;
+    background-color: rgb(24, 24, 24);
+    color:white;
+}
+/* END FOOTER **/
+
+/* FEATURES */
+.dp-btn {
+    padding: 0.8em;
+    font-size: 0.4em;
+    /* background: white; */
+    background: transparent;
+    border: 1px solid white;
+    font-weight: 500;
+    color:white !important;
+    /* < */
+}
+.dp-btn:hover{
+    background: white;
+    color: black !important;
+}
+.dp-btn.dark {
+    font-size: 0.8em;
+    border: 1px solid black;
+    color:black !important;
+}
+.dp-btn.dark:hover{
+    background: black;
+    color: white !important;
+}
+.dp-btn.white {
+    font-size: 0.8em;
+    border: 1px solid white;
+    color:white !important;
+}
+.dp-btn.white:hover{
+    background: white;
+    color: black !important;
+}
+.text-sm {
+    font-size: 0.86rem;
+}
+.dp-sb-title-container{
+    position: relative;
+}
+.dp-sb-title {
+    position: relative;
+    margin: 30px;
+    color: #353535;
+    letter-spacing: 2px;
+    font-family: 'Raleway', sans-serif;
+}
+.dp-sb-title.sb-right::before{
+    content: '';
+    position: absolute;
+    width: 45%;
+    height: 0.5px;
+    top: 0;
+    bottom: 0;
+    left: -20%;
+    margin: auto;
+    background: rgb(0 24 76);
+    /* transform: scaleY(2); */
+    opacity: 0.5;
+    /* transition: 0.3s; */
+}
+.dp-sb-title.sb-left::after{
+    content: '';
+    position: absolute;
+    width: 45%;
+    height: 0.5px;
+    top: 0;
+    bottom: 0;
+    right: -20%;
+    margin: auto;
+    background: rgb(0 24 76);
+    /* transform: scaleY(2); */
+    opacity: 0.5;
+    /* transition: 0.3s; */
+}
+
+
+/*
+https://codepen.io/thejamespower/pen/OVNYLL
+https://ladersam.com/contacto/
+https://uigradients.com/#PinotNoir
+https://www.ekosnegocios.com/articulo/las-10-mejores-consultoras-del-mundo
+
+referencias
+yala
+https://www.ey.com/es_pe/consulting
+slide
+https://www.bain.com/
+footer
+https://www.kearney.com/why-were-different
+*/
+
+/**
+-- así como 2da parte, despues del slider
+        --se le podría agregar somos una empresa...facebook
+https://grupoconsultorefe.com/
+
+    -opcional
+    https://antut-advisor.com/#
+
+-footer direccion
+http://www.consultingadvisers.com/#
+
+-- navbar y lineas de subtitulos
+https://piconasociados.com/
+
+YOUTUBE
+falconMaster -animate on scroll
+alexcg design top 7 librerias - 19:29 -> sedes
+javi niguez - top 15 efectos css - 1:25 -> nav
+*/
+
+
+/* NOSOTROS - EJEMPL 
+    index - mision, vision
+        https://www.reply.com/en/
+        parnertship
+        https://www.adhocscf.com/
+    
+    index - particulas
+        https://www.parallelconsulting.com/
+
+
+    part 3 -> sobre nostros
+        http://eycsas.com/
+
+    part 2 -> imgs // para para index puede sr
+        https://ideconsult.net/
+    
+    part 3 -> attachament 
+        https://www.superia.es/
+    
+    part 3 -> lineas
+        https://www.proximagroup.com/
+    
+    estructura e index tambn
+        https://www.q5partners.com/about-us/
+
+ END - EJEMPL */
+
+ /* referencial 
+    https://www.cuboconsulenza.com/
+    https://www.mida.biz/
+
+    tipo de letra part-3, frases
+    https://indiaparamarsh.com/
+
+ */
+
+/*  ANIMATION 
+
+    Locomotive Scroll 
+    https://www.youtube.com/watch?v=DRWRVc87h7I
+    https://www.youtube.com/watch?v=u-ks1-dzKEw
+    
+*/
+
