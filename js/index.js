@@ -76,8 +76,8 @@ window.addEventListener('load', function(){
 			  breakpoint: 450,
 			  settings: {
 				// Set to `auto` and provide item width to adjust to viewport
-				slidesToShow: 2,
-				slidesToScroll: 2
+				slidesToShow: 1,
+				slidesToScroll: 1
 			  }
 			},{
 			  // screens greater than >= 1024px
