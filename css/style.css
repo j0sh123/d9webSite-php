@@ -388,7 +388,7 @@ nav.nav-top{
 
 @media (max-width: 600px){
     body{
-        font-size: 12px;
+        font-size: 15px;
     }
     .logo{
         height: 76px;
@@ -436,6 +436,7 @@ nav.nav-top{
     transform: translateX(0%);
     position: relative;
     background: #031c3d38;
+    padding: 0;
 }
 
 /*
