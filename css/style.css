@@ -435,7 +435,7 @@ nav.nav-top{
 .nav-active ul{
     transform: translateX(0%);
     position: relative;
-    background: #031c3d38;
+    /*background: #031c3d38;*/
     padding: 0;
 }
 
